@@ -1,0 +1,36 @@
+tool:
+  sonarrunnerinstallation:
+    installations:
+    - name: "sonarqube-scanner"
+      properties:
+      - installSource:
+          installers:
+          - sonarRunnerInstaller:
+              id: "3.2.0.1227"
+unclassified:
+  bitbucketendpointconfiguration:
+    endpoints:
+    - bitbucketServerEndpoint:
+        credentialsId: "jenkins-bitbucket-user-pass"
+        displayName: "Your Bitbucket"
+        manageHooks: true
+        serverUrl: "https://your.bitbucket-url.com"
+        callCanMerge: true
+  sonarglobalconfiguration:
+    installations:
+    - name: "Your Sonarqube"
+      serverAuthenticationToken: "${SONAR_TOKEN}"
+      serverUrl: "https://your.sonarqube-url.com"
+      triggers:
+        skipScmCause: false
+        skipUpstreamCause: false
+  globallibraries:
+    libraries:
+    - defaultVersion: "master"
+      name: "jenkins-shared-library"
+      retriever:
+        modernSCM:
+          scm:
+            git:
+              credentialsId: "jenkins-bitbucket"
+              remote: "ssh://git@your.pipeline-repo-url.com/pipeline/jenkins-shared-library.git"
