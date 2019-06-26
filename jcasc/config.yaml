@@ -23,5 +23,5 @@ unclassified:
         modernSCM:
           scm:
             git:
-              credentialsId: "github-token"
+              credentialsId: "github-key"
               remote: "git@github.com:agarat/example-shared-library.git"
