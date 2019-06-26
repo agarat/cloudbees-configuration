@@ -75,6 +75,7 @@
         "pipeline-maven",
         "tasks",
         "warnings",
+        "sonar",
         "configuration-as-code"
       ]
     }
