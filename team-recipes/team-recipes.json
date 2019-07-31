@@ -1,11 +1,11 @@
 {
-  "data": [
+  "version":"1",
+  "data":[
     {
-      "default": false,
-      "description": "The minimalistic setup.",
-      "displayName": "Basic",
-      "name": "basic",
-      "plugins": [
+      "name":"basic",
+      "displayName":"Basic",
+      "description":"The minimalistic setup.",
+      "plugins":[
         "bluesteel-master",
         "cloudbees-folders-plus",
         "cloudbees-jsync-archiver",
@@ -30,15 +30,59 @@
         "wikitext",
         "workflow-aggregator",
         "workflow-cps-checkpoint",
-        "configuration-as-code"
-      ]
+
+      ],
+      "default":true
     },
     {
-      "default": false,
-      "description": "The essential tools to build, release and deploy Java Web applications including integration with Maven, Gradle and Node JS.",
-      "displayName": "Java & Web Development",
-      "name": "java-web",
-      "plugins": [
+      "name":"java-web",
+      "displayName":"Java & Web Development",
+      "description":"The essential tools to build, release and deploy Java Web applications including integration with Maven, Gradle and Node JS.",
+      "plugins":[
+        "bluesteel-master",
+        "cloudbees-folders-plus",
+        "cloudbees-jsync-archiver",
+        "cloudbees-monitoring",
+        "cloudbees-nodes-plus",
+        "cloudbees-ssh-slaves",
+        "cloudbees-support",
+        "cloudbees-workflow-template",
+        "credentials-binding",
+        "email-ext",
+        "git",
+        "git-client",
+        "github-branch-source",
+        "github-organization-folder",
+        "infradna-backup",
+        "ldap",
+        "mailer",
+        "operations-center-analytics-reporter",
+        "operations-center-cloud",
+        "pipeline-model-definition",
+        "ssh-credentials",
+        "wikitext",
+        "workflow-aggregator",
+        "workflow-cps-checkpoint",
+        "config-file-provider",
+        "cloudbees-aws-cli",
+        "cloudbees-cloudfoundry-cli",
+        "findbugs",
+        "gradle",
+        "jira",
+        "junit",
+        "nodejs",
+        "openshift-cli",
+        "pipeline-maven",
+        "tasks",
+        "warnings"
+      ],
+      "default":false
+    },
+    {
+      "name":"custom-recipe",
+      "displayName":"Custom Recipe with JCASC",
+      "description":"Custom recipe with extra plugin.",
+      "plugins":[
         "bluesteel-master",
         "cloudbees-folders-plus",
         "cloudbees-jsync-archiver",
@@ -75,56 +119,9 @@
         "pipeline-maven",
         "tasks",
         "warnings",
-        "sonar",
         "configuration-as-code"
-      ]
+      ],
+      "default":false
     },
-    {
-      "default": false,
-      "description": "The essential tools to build, release and deploy Java Web applications including integration with Maven, Gradle and Node JS.",
-      "displayName": "Custom Recipe",
-      "name": "custom-jenkins-world",
-      "plugins": [
-        "bluesteel-master",
-        "cloudbees-folders-plus",
-        "cloudbees-jsync-archiver",
-        "cloudbees-monitoring",
-        "cloudbees-nodes-plus",
-        "cloudbees-ssh-slaves",
-        "cloudbees-support",
-        "cloudbees-workflow-template",
-        "credentials-binding",
-        "email-ext",
-        "git",
-        "git-client",
-        "github-branch-source",
-        "github-organization-folder",
-        "infradna-backup",
-        "ldap",
-        "mailer",
-        "operations-center-analytics-reporter",
-        "operations-center-cloud",
-        "pipeline-model-definition",
-        "ssh-credentials",
-        "wikitext",
-        "workflow-aggregator",
-        "workflow-cps-checkpoint",
-        "config-file-provider",
-        "cloudbees-aws-cli",
-        "cloudbees-cloudfoundry-cli",
-        "findbugs",
-        "gradle",
-        "jira",
-        "junit",
-        "nodejs",
-        "openshift-cli",
-        "pipeline-maven",
-        "tasks",
-        "warnings",
-        "sonar",
-        "configuration-as-code"
-      ]
-    }
-  ],
-  "version": "1"
+  ]
 }
