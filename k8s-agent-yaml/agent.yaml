@@ -1,10 +1,4 @@
 ---
-kind: "Ingress"
-metadata:
-  annotations:
-    kubernetes.io/ingress.class: "nginx"
-    
----
 kind: "StatefulSet"
 spec:
   template:
@@ -13,10 +7,6 @@ spec:
       - name: "jenkins"
         securityContext:
           runAsUser: 1000
-        volumeMounts:
-        - name: "jenkins-secrets"
-          mountPath: "/opt/jenkins/secrets"
-          readOnly: true
         env:
         - name: CASC_JENKINS_CONFIG
           value: "https://raw.githubusercontent.com/agarat/cloudbees-configuration/master/jcasc/config.yaml"
