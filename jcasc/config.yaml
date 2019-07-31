@@ -1,20 +1,4 @@
 unclassified:
-  bitbucketendpointconfiguration:
-#    endpoints:
-#    - bitbucketServerEndpoint:
-#        credentialsId: "jenkins-bitbucket-user-pass"
-#        displayName: "Your Bitbucket"
-#        manageHooks: true
-#        serverUrl: "https://your.bitbucket-url.com"
-#        callCanMerge: true
-  sonarglobalconfiguration:
-    installations:
-    - name: "Sonar"
-      credentialsId: "sonar-token"
-      serverUrl: "https://sonarcloud.io"
-      triggers:
-        skipScmCause: false
-        skipUpstreamCause: false
   globallibraries:
     libraries:
     - defaultVersion: "master"

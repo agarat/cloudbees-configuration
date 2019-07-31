@@ -17,8 +17,7 @@ spec:
         - name: "jenkins-secrets"
           mountPath: "/opt/jenkins/secrets"
           readOnly: true
-      volumes:
-      - name: "jenkins-secrets"
-        secret:
-          secretName: "jenkins-secrets"
+        env:
+        - name: CASC_JENKINS_CONFIG
+          value: "https://raw.githubusercontent.com/agarat/cloudbees-configuration/master/jcasc/config.yaml"
 
