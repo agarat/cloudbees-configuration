@@ -29,8 +29,7 @@
         "ssh-credentials",
         "wikitext",
         "workflow-aggregator",
-        "workflow-cps-checkpoint",
-
+        "workflow-cps-checkpoint"
       ],
       "default":true
     },
